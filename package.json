@@ -1,14 +1,26 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "cypress-typescript-todoist",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "build": "tsc"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "cy:open": "cypress open"
   },
-  "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.5.3"
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@cypress/vite-dev-server": "^6.0.2",
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "@eslint/js": "^9.22.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "babel-loader": "^9.2.1",
+    "cypress": "^14.2.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-unicorn": "^57.0.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1",
+    "webpack": "^5.98.0"
   },
   "private": true
 }
